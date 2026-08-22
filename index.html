@@ -1,99 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dvk69 | ML & Healthcare Systems</title>
+  <title>Vineeth Kumar | Data & ML Systems Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased font-sans">
-  <main class="max-w-3xl mx-auto px-6 py-16">
+<body class="bg-slate-950 text-slate-200 antialiased font-sans selection:bg-emerald-500 selection:text-slate-950">
+
+  <div class="max-w-4xl mx-auto px-6 py-16 sm:py-24">
     
-    <!-- Hero Header -->
-    <header class="mb-16">
-      <h1 class="text-3xl font-bold tracking-tight text-white mb-2">dvk69</h1>
-      <p class="text-lg text-emerald-400 font-medium mb-4">Machine Learning Engineer · Healthcare AI & MLOps</p>
-      <p class="text-slate-400 leading-relaxed">
-        Building robust machine learning pipelines, drift detection systems for clinical data, and scalable backend applications with Python.
+    <!-- Hero / Header Section -->
+    <header class="space-y-6 pb-12 border-b border-slate-800/80">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+        <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Ph.D. Candidate in CS · Distributed Systems & ML
+      </div>
+      
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-white">Vineeth Kumar</h1>
+        <p class="text-xl text-slate-400 font-medium mt-2">Data & Machine Learning Systems Engineer</p>
+      </div>
+      
+      <p class="text-slate-300 text-base leading-relaxed max-w-2xl">
+        Specializing in large-scale Lakehouse architectures (<span class="text-white font-medium">Databricks, Spark, Snowflake</span>), MLOps feature stores, and automated statistical drift/anomaly detection in regulated enterprise and healthcare environments.
       </p>
-      <div class="flex gap-4 mt-6">
-        <a href="https://github.com/dvk69" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-sm font-semibold rounded-md border border-slate-700 transition">GitHub Profile</a>
-        <a href="mailto:your-email@example.com" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-sm font-semibold text-white rounded-md transition">Contact</a>
+
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a href="mailto:vineethkumard99@gmail.com" class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-lg shadow-sm transition">
+          <i class="fa-solid fa-envelope"></i> Contact Me
+        </a>
+        <a href="https://github.com/dvk69" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-slate-200 text-sm font-semibold rounded-lg border border-slate-700 transition">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="tel:+19195056970" class="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-slate-200 text-sm font-semibold rounded-lg border border-slate-700 transition">
+          <i class="fa-solid fa-phone"></i> (919) 505-6970
+        </a>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-slate-900/50 text-slate-400 text-sm rounded-lg border border-slate-800">
+          <i class="fa-solid fa-location-dot"></i> Raleigh, NC
+        </span>
       </div>
     </header>
 
-    <!-- Featured Projects -->
-    <section class="mb-16">
-      <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-6">Featured Projects</h2>
-      <div class="space-y-6">
+    <!-- Key Metrics / Highlights -->
+    <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-12 border-b border-slate-800/80">
+      <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+        <div class="text-2xl font-black text-emerald-400">200M+</div>
+        <div class="text-xs text-slate-400 mt-1">Monthly Records Processed</div>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+        <div class="text-2xl font-black text-emerald-400">30%</div>
+        <div class="text-xs text-slate-400 mt-1">Data Availability Boost</div>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+        <div class="text-2xl font-black text-emerald-400">25%</div>
+        <div class="text-xs text-slate-400 mt-1">Runtime Reduction</div>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+        <div class="text-2xl font-black text-emerald-400">&lt;15ms</div>
+        <div class="text-xs text-slate-400 mt-1">Real-time Microservice SLA</div>
+      </div>
+    </section>
+
+    <!-- Featured Engineering Projects -->
+    <section class="py-12 border-b border-slate-800/80">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-semibold mb-8">Selected Systems & ML Projects</h2>
+      
+      <div class="space-y-8">
         
-        <!-- Project 1 -->
-        <article class="p-6 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 transition">
-          <div class="flex justify-between items-baseline mb-2">
-            <h3 class="text-lg font-bold text-white">Clinical Trial Drift Guard</h3>
-            <span class="text-xs text-emerald-400 font-mono">Active Development</span>
+        <!-- Project 1: FoodFlow -->
+        <article class="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <h3 class="text-xl font-bold text-white">FoodFlow: Intelligent Food Waste Lakehouse & SLA Engine</h3>
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">Full-Stack / Lakehouse</span>
           </div>
-          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-            Data quality and model drift monitoring framework designed for clinical trial data streams to detect distribution shifts before model performance degrades.
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Architected a 3-tier Medallion lakehouse using DuckDB and dbt to process IoT disposal streams and retail transactions against EPA benchmarks. Features a sub-15ms FastAPI microservice with USDA FoodKeeper shelf-life constraints, RAG-assisted anomaly diagnostics, and an interactive Streamlit operations dashboard.
           </p>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
-            <span class="px-2.5 py-1 bg-slate-800 rounded">Python</span>
-            <span class="px-2.5 py-1 bg-slate-800 rounded">MLOps</span>
-            <span class="px-2.5 py-1 bg-slate-800 rounded">Statistical Drift</span>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
+            <span class="px-2.5 py-1 bg-slate-800 rounded">DuckDB</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">dbt</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">FastAPI</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">Streamlit</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">Docker</span>
           </div>
-          <div class="mt-4">
-            <a href="https://github.com/dvk69/Clinical_trial_drift_guard" class="text-xs text-emerald-400 hover:underline">View Repository &rarr;</a>
-          </div>
+          <a href="https://github.com/dvk69/foodflow" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition">
+            View Source Architecture <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
         </article>
 
-        <!-- Project 2 -->
-        <article class="p-6 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 transition">
-          <div class="flex justify-between items-baseline mb-2">
-            <h3 class="text-lg font-bold text-white">FoodFlow</h3>
-            <span class="text-xs text-slate-400 font-mono">Full-Stack</span>
+        <!-- Project 2: Clinical Trial Drift Guard -->
+        <article class="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <h3 class="text-xl font-bold text-white">Clinical Trial Drift Guard</h3>
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">Healthcare MLOps</span>
           </div>
-          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-            End-to-end management and order tracking application showing backend Python architecture and application lifecycle management.
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Automated feature and statistical drift detection framework for healthcare workflows. Integrates continuous distributional monitoring (KS-tests, PSI) to surface data pipeline degradation and ensure regulatory compliance in clinical streams.
           </p>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
             <span class="px-2.5 py-1 bg-slate-800 rounded">Python</span>
-            <span class="px-2.5 py-1 bg-slate-800 rounded">Backend</span>
-            <span class="px-2.5 py-1 bg-slate-800 rounded">System Architecture</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">Anomaly Detection</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">Feature Drift</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">Healthcare Data</span>
           </div>
-          <div class="mt-4">
-            <a href="https://github.com/dvk69/foodflow" class="text-xs text-emerald-400 hover:underline">View Repository &rarr;</a>
+          <a href="https://github.com/dvk69/Clinical_trial_drift_guard" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition">
+            View Source Architecture <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </article>
+
+        <!-- Project 3: Research / Deep Learning -->
+        <article class="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <h3 class="text-xl font-bold text-white">Automatic Image Captioning & RetinaFace Localization</h3>
+            <span class="text-xs font-mono text-slate-400 bg-slate-800 px-2 py-0.5 rounded">Deep Learning Research</span>
           </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Engineered an end-to-end multimodal VGG16 + LSTM captioning pipeline achieving a 15% BLEU score lift (published in IEEE/peer review). Implemented single-stage dense face localization using ResNet152/MobileNet with multi-task bounding box and landmark regression, reducing localization loss by 40%.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400 mb-6">
+            <span class="px-2.5 py-1 bg-slate-800 rounded">PyTorch / TensorFlow</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">CNN-LSTM</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">Computer Vision</span>
+            <span class="px-2.5 py-1 bg-slate-800 rounded">NLP</span>
+          </div>
+          <a href="https://github.com/dvk69/Image-Captioning" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition">
+            View Research Code <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
         </article>
 
       </div>
     </section>
 
-    <!-- Fundamental ML & Research -->
-    <section class="mb-16">
-      <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-6">Foundations & Applied ML</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Professional Experience Timeline -->
+    <section class="py-12 border-b border-slate-800/80">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-semibold mb-8">Professional Experience</h2>
+      
+      <div class="space-y-10 border-l border-slate-800 pl-6 ml-2">
         
-        <div class="p-4 rounded bg-slate-900/60 border border-slate-800">
-          <h4 class="font-semibold text-white text-sm">Breast Cancer Classification</h4>
-          <p class="text-xs text-slate-400 mt-1 mb-3">Diagnostic predictive modeling using supervised classification workflows.</p>
-          <a href="https://github.com/dvk69/Breast-Cancer-Prediction" class="text-xs text-emerald-400 hover:underline">Code & Notebook &rarr;</a>
+        <!-- Sanizer IT Services -->
+        <div class="relative">
+          <span class="absolute -left-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-emerald-500 ring-4 ring-slate-950"></span>
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+            <h3 class="text-base font-bold text-white">Data Engineer <span class="text-slate-400 font-normal">· Sanizer IT Services</span></h3>
+            <span class="text-xs font-mono text-slate-400">Sep 2025 – Dec 2025</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-3">Texas, USA</p>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-outside ml-4">
+            <li>Designed low-latency Databricks/Spark streaming pipelines for real-time ML anomaly detection.</li>
+            <li>Built an ML-ready feature store on AWS S3 and Snowflake with automated feature versioning for fast model iteration.</li>
+            <li>Integrated statistical drift checks into Databricks workflows and surfaced health metrics via Tableau.</li>
+          </ul>
         </div>
 
-        <div class="p-4 rounded bg-slate-900/60 border border-slate-800">
-          <h4 class="font-semibold text-white text-sm">Image Captioning Engine</h4>
-          <p class="text-xs text-slate-400 mt-1 mb-3">Multimodal deep learning integrating computer vision and sequence models.</p>
-          <a href="https://github.com/dvk69/Image-Captioning" class="text-xs text-emerald-400 hover:underline">Code & Notebook &rarr;</a>
+        <!-- Nationwide -->
+        <div class="relative">
+          <span class="absolute -left-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+            <h3 class="text-base font-bold text-white">Data Engineer <span class="text-slate-400 font-normal">· Nationwide Insurance</span></h3>
+            <span class="text-xs font-mono text-slate-400">June 2023 – July 2025</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-3">Ohio, USA</p>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-outside ml-4">
+            <li>Optimized batch/streaming PySpark pipelines in Databricks Lakehouse, boosting downstream data availability by 30%.</li>
+            <li>Migrated 6 legacy Informatica/Perl workflows to Spark parallel architectures, cutting runtimes by ~25%.</li>
+            <li>Created automated data quality frameworks across 12 tables and implemented telemetry via Splunk and New Relic.</li>
+          </ul>
         </div>
 
-        <div class="p-4 rounded bg-slate-900/60 border border-slate-800">
-          <h4 class="font-semibold text-white text-sm">Cliff Walking RL Agent</h4>
-          <p class="text-xs text-slate-400 mt-1 mb-3">Reinforcement learning implementation of temporal-difference control algorithms.</p>
-          <a href="https://github.com/dvk69/Cliff-Walking-AI" class="text-xs text-emerald-400 hover:underline">Code & Notebook &rarr;</a>
+        <!-- Anthem -->
+        <div class="relative">
+          <span class="absolute -left-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+            <h3 class="text-base font-bold text-white">Data Engineer <span class="text-slate-400 font-normal">· Anthem</span></h3>
+            <span class="text-xs font-mono text-slate-400">Jan 2023 – May 2023</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-3">Texas, USA</p>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-outside ml-4">
+            <li>Engineered ETL pipelines processing 200M+ healthcare records monthly using Spark and Python.</li>
+            <li>Architected a HIPAA-compliant data lakehouse on AWS with automated PII masking at ingestion.</li>
+            <li>Tuned Snowflake clustering and materialized views, cutting compute costs by 20%.</li>
+          </ul>
         </div>
 
       </div>
     </section>
 
-  </main>
+    <!-- Technical Stack Summary -->
+    <section class="py-12 border-b border-slate-800/80">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-semibold mb-6">Technical Arsenal</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+          <span class="text-white font-semibold block mb-1">Data & Distributed Systems</span>
+          <span class="text-slate-400 text-xs leading-relaxed">Apache Spark, Databricks, Snowflake, DuckDB, dbt, Kafka, Airflow, AWS (S3, EMR, Glue), GCP (BigQuery), SQL</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+          <span class="text-white font-semibold block mb-1">Machine Learning & MLOps</span>
+          <span class="text-slate-400 text-xs leading-relaxed">PyTorch, TensorFlow, scikit-learn, Feature Stores, Statistical Drift (KS-Test, PSI), Anomaly Detection, FastAPI, Streamlit</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+          <span class="text-white font-semibold block mb-1">Languages & Infrastructure</span>
+          <span class="text-slate-400 text-xs leading-relaxed">Python, SQL, C++, Java, Shell, Docker, CI/CD (GitHub Actions), Linux/Unix, Git</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+          <span class="text-white font-semibold block mb-1">Education & Credentials</span>
+          <span class="text-slate-400 text-xs leading-relaxed">Doctorate in CS (Univ. of Potomac, Exp. 2029) · M.S. in Data Science (Univ. of New Haven, 2022) · Approved I-797B</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-12 text-center text-xs text-slate-500">
+      <p>© 2026 Vineeth Kumar · Hosted on GitHub Pages</p>
+    </footer>
+
+  </div>
+
 </body>
 </html>
